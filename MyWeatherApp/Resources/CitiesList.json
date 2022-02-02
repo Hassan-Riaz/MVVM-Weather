@@ -1,0 +1,35 @@
+
+{
+  "cities": [
+    {
+      "woeid": "2412445",
+      "city": "Gothenburg",
+      
+    },
+    {
+      "woeid": "906057",
+      "city": "Stockholm",
+      
+    },
+    {
+      "woeid": "2455872",
+      "city": "Mountain View",
+      
+    },
+    {
+      "woeid": "44418",
+      "city": "London",
+      
+    },
+    {
+      "woeid": "2459115",
+      "city": "New York",
+      
+    },
+    {
+      "woeid": "638242",
+      "city": "Berlin",
+      
+    }
+  ]
+}
