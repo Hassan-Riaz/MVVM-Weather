@@ -18,7 +18,7 @@ class WeatherViewController : UIViewController  {
     @IBOutlet var vwSubFirst: UIView!
     
     lazy var viewModel = {
-        WeatherViewModel()
+        WeatherViewModel(delegate: self)
     }()
     
     override func viewDidLoad() {
@@ -44,8 +44,15 @@ class WeatherViewController : UIViewController  {
 }
 
 extension WeatherViewController: WeatherViewDelegate {
-    
+
     func cityChanged(city: CityCellViewModel) {
         self.viewModel.getWeather(woid: city.woeid)
+    }
+}
+
+extension WeatherViewController: WeatherViewModelDelegate {
+    
+    func loadData(weather: WeatherDetailsViewModel) {
+        
     }
 }

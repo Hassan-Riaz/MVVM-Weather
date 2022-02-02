@@ -10,6 +10,11 @@ import Foundation
 class WeatherViewModel: NSObject {
     
     var weather = [ConsolidatedWeather]()
+    var outputDelegate: WeatherViewModelDelegate?
+    
+    init(delegate: WeatherViewModelDelegate) {
+        self.outputDelegate = delegate
+    }
     
     func getWeather( woid : String) {
         print("woid" , woid)
@@ -30,13 +35,19 @@ class WeatherViewModel: NSObject {
         }
     }
     
-    func fetchData(weather: [ConsolidatedWeather]) {
-        self.weather = weather // Cache
+    var tommorrowWeather: WeatherDetailsViewModel? {
         if  weather.count > 1 {
             let weatherDetailObj = createWeatherModel(weatherDetails: weather[1])
-            print(weatherDetailObj)
+            return weatherDetailObj
         }
-        
+        return nil
+    }
+    
+    func fetchData(weather: [ConsolidatedWeather]) {
+        self.weather = weather // Cache
+        if let weatherObj = self.tommorrowWeather {
+            self.outputDelegate?.loadData(weather: weatherObj)
+        }
     }
     
     func createWeatherModel(weatherDetails: ConsolidatedWeather) -> WeatherDetailsViewModel {
@@ -54,4 +65,8 @@ class WeatherViewModel: NSObject {
         return WeatherDetailsViewModel(weather_state_name: weather_state_name, weather_state_abbr: weather_state_abbr, the_temp: the_temp, max_temp: max_temp, min_temp: min_temp, wind_speed: wind_speed, air_pressure: air_pressure, humidity: humidity)
     }
     
+}
+
+protocol WeatherViewModelDelegate {
+    func loadData(weather: WeatherDetailsViewModel)
 }
