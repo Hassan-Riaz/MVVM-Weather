@@ -21,6 +21,7 @@ class WeatherViewModel: NSObject {
         let networkManager = NetworkManager()
         let endpoint = "location/\(woid)"
         guard let url = URL(string: Constants.BaseURL + endpoint) else { fatalError("Invalid URL") }
+        print("url",url)
         
         // Request data from the backend
         networkManager.request(fromURL: url) { (result: Result<Weather, Error>) in

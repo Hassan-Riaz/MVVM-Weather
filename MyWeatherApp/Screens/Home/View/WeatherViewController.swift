@@ -47,6 +47,7 @@ class WeatherViewController : UIViewController  {
     @IBAction func actChangeCity(_ sender: UIButton) {
         
         if let citySelectionVC = Constants.mainStoryboard.instantiateViewController(withIdentifier: Constants.citySelectionVC) as? CitySelectionViewController {
+            citySelectionVC.weatherDelegate = self
             self.navigationController?.pushViewController(citySelectionVC, animated: false)
         }
     }
