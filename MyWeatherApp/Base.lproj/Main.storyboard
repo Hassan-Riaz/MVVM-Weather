@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b8R-YR-DjV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b8R-YR-DjV">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AsQ-oj-IWM">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="London" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKR-Vv-EKy">
                                         <rect key="frame" x="57" y="70" width="301" height="42"/>
@@ -34,16 +34,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLc-KF-SNh">
-                                        <rect key="frame" x="0.0" y="624" width="414" height="150"/>
+                                        <rect key="frame" x="0.0" y="659.5" width="414" height="158.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBL-5x-3hn">
-                                                <rect key="frame" x="8" y="14.5" width="129" height="121"/>
+                                                <rect key="frame" x="8" y="15.5" width="129" height="127.5"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airpressure" translatesAutoresizingMaskIntoConstraints="NO" id="xLr-Er-LX9">
-                                                        <rect key="frame" x="49" y="16" width="30" height="30"/>
+                                                        <rect key="frame" x="49" y="16" width="30" height="33"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKM-21-dsW">
-                                                        <rect key="frame" x="8" y="67" width="113" height="24"/>
+                                                        <rect key="frame" x="8" y="72.5" width="113" height="25"/>
                                                         <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -67,13 +67,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bD4-5H-fKc">
-                                                <rect key="frame" x="142.5" y="14.5" width="129" height="121"/>
+                                                <rect key="frame" x="142.5" y="15.5" width="129" height="127.5"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="humidity" translatesAutoresizingMaskIntoConstraints="NO" id="zLy-ew-280">
-                                                        <rect key="frame" x="49.5" y="16" width="30" height="30"/>
+                                                        <rect key="frame" x="49.5" y="16" width="30" height="32.5"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPC-fF-vEN">
-                                                        <rect key="frame" x="8" y="67" width="113" height="24"/>
+                                                        <rect key="frame" x="8" y="72.5" width="113" height="25"/>
                                                         <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -97,13 +97,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uou-RR-KSC">
-                                                <rect key="frame" x="277" y="14.5" width="129" height="121"/>
+                                                <rect key="frame" x="277" y="15.5" width="129" height="127.5"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windspeed" translatesAutoresizingMaskIntoConstraints="NO" id="3UJ-02-S4r">
-                                                        <rect key="frame" x="49.5" y="16" width="30" height="30"/>
+                                                        <rect key="frame" x="49.5" y="16" width="30" height="32.5"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ST1-tQ-VYX">
-                                                        <rect key="frame" x="8" y="67" width="113" height="24"/>
+                                                        <rect key="frame" x="8" y="72.5" width="113" height="25"/>
                                                         <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -210,6 +210,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fCC-kY-q7I"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="vwSub" destination="GLc-KF-SNh" id="82I-E0-Tnn"/>
                         <outlet property="vwSubFirst" destination="oBL-5x-3hn" id="fzl-jY-UNa"/>

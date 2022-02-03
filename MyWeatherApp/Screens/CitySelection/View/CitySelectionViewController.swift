@@ -29,7 +29,6 @@ class CitySelectionViewController: UIViewController {
         tableView.separatorColor = .lightGray
         tableView.separatorStyle = .singleLine
         tableView.tableFooterView = UIView()
-        tableView.allowsSelection = false
         
         tableView.register(CitySelectionCell.nib, forCellReuseIdentifier: CitySelectionCell.identifier)
     }
